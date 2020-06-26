@@ -1,0 +1,16 @@
+{% for type, message in app.flashes %}
+    {% for message in message  %}
+       <div class="notification is-{{ type }}">
+       {{ message }}
+       </div>
+    {% endfor %}
+    
+{% endfor %} 
+
+{#
+   [
+       'succes' => ['msg1', 'msg2']
+       'danger' => ['msg1'] 
+   ]
+
+#}

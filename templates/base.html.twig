@@ -15,6 +15,13 @@
 <body>
     {% block body '' %}
 
+    <nav class="nav">
+        <ul>
+            <li></li>
+            <li></li>
+        </ul>
+    </nav>
+
     {% block js %}
         {# Insérer les balises <script> de l'entrée "app" #}
         {{ encore_entry_script_tags('app') }}

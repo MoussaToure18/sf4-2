@@ -1,4 +1,5 @@
 <div class="columns is-multiline">
+{# page produit #}
             {% for product in products %}
                 <div class="column is-one-third">
                     <div class="box">
@@ -14,6 +15,7 @@
                                         <a href="{{ path('product_show', {id: product.id } )}}" class="has-text-primary">
                                             <strong>{{ product.name }}</strong>
                                         </a>
+                                        <p class="subtitle is-6">{{ product.category.name }}</p>
                                         <small>{{ product.createdAt|date('d/m/Y') }}</small>
                                         <br>
                                         {{ product.description|slice(0, 50) }}
